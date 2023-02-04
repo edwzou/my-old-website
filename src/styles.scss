@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homepage {
+    margin: 150px auto;
+    width: 70%;
+
+    &_head {
+        &_navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 8px;
+            left: 0;
+        }
+
+        &_navbar a {
+            color: gray;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        &_navbar a:hover {
+            color: black;
+        }
+    }
+
+    &_body {
+        &_text h2 {
+            margin: 0;
+            font-size: 48px;
+            color: red;
+        }
+
+        &_text p {
+            margin: 0;
+            font-size: 16px;
+            color: blueviolet;
+        }
+    
+        &_image {
+            max-width: 200px;
+            max-height: 200px;
+            float: left;
+            border: 3px solid black;
+            border-radius: 10px;
+            margin-right: 16px;
+        }
+    }
+}
