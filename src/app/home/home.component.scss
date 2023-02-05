@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_content {
+    margin: 150px auto;
+    width: 70%;
+
+    &_text p {
+        margin: 0;
+        font-size: 16px;
+        color: blueviolet;
+    }
+    
+    &_text h2 {
+        margin: 0;
+        font-size: 48px;
+        color: red;
+    }
+  
+    &_image {
+        max-width: 200px;
+        max-height: 200px;
+        float: left;
+        border: 3px solid black;
+        border-radius: 10px;
+        margin-right: 16px;
+    }
+    
+}

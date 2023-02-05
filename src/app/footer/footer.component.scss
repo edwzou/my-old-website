@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 2%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+a {
+    color: lightgray;
+    text-decoration: none;
+    transition: 0.7s;
+}
+  
+a:hover {
+    color: black
+}
