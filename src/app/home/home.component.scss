@@ -6,18 +6,19 @@ body {
 
 .home_content {
     margin: 150px auto;
-    width: 70%;
+    width: 50%;
+    font-family: sans-serif;
+
+    &_text h2 {
+        margin: 0;
+        font-size: 64px;
+        color: black;
+    }
 
     &_text p {
         margin: 0;
-        font-size: 16px;
-        color: blueviolet;
-    }
-    
-    &_text h2 {
-        margin: 0;
-        font-size: 48px;
-        color: red;
+        font-size: 18px;
+        color: grey;
     }
   
     &_image {
