@@ -1,0 +1,31 @@
+.projects_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 95vh; /* Ensure the container takes the full viewport height */
+}
+
+.project {
+    margin-right: 20px;
+}
+
+.project-box {
+    width: 200px;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Center the text horizontally */
+}
+
+.project-box:hover {
+    background-color: #ddd;
+}
+
+.project-box h2 {
+    font-size: 20px;
+    color: #333;
+}
