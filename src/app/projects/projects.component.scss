@@ -1,31 +1,80 @@
 .projects_content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 95vh; /* Ensure the container takes the full viewport height */
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
 }
 
 .project {
-    margin-right: 20px;
+    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .project-box {
-    width: 200px;
-    height: 150px;
-    border: 1px solid #ccc;
+    position: relative;
+    width: 250px;
+    height: 220px;
+    border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #f0f0f0;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    text-align: center; /* Center the text horizontally */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-box i {
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.bolt-icon i {
+    color: #007bff; 
+}
+
+.power-off-icon i {
+    color: #6cb43c;
+}
+
+.basketball-icon i {
+    color: #ff5733;
 }
 
 .project-box:hover {
     background-color: #ddd;
 }
 
-.project-box h2 {
-    font-size: 20px;
-    color: #333;
+.project-box:hover i {
+    opacity: 0;
+}
+
+.icon-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding: 5px;
+    font-size: 32px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-family: sans-serif;
+}
+
+.project-box:hover .icon-text {
+    opacity: 1;
 }
